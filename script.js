@@ -22,7 +22,17 @@ funksjonen)
 ******************************************************************************/
 
 // Skriv koden for oppgave 1 her
+let tall = 1
 
+function myNumberChecker () {
+    if (tall %2 === 0) {
+        return "Partall"
+    }  else {
+        return "Oddetall"
+    }
+}
+
+console.log(myNumberChecker())
 
 
 /******************************************************************************
@@ -38,6 +48,15 @@ Eksempel: "Dette er kult" skal returnere "DETTE ER KULT!"
 ******************************************************************************/
 
 // Skriv koden for oppgave 2 her
+
+let myText = "Dette er kult"
+
+const bigText = () => {
+    return myText.toUpperCase() + "!"
+}
+
+console.log(bigText())
+
 
 /******************************************************************************
 3.
@@ -62,6 +81,27 @@ Hvis ingen timeverdi mottas, skal funksjonen returnere en feilmelding.
 ******************************************************************************/
 
 // Skriv koden for oppgave 3 her
+
+let døgn = 2
+let navn = "Ola Normann"
+
+const clock = () => {
+   if (døgn < 0, døgn > 23 ) {
+    return "Ugyldig tid"
+   } else if (døgn <= 5) {
+    return `God natt ${navn}`
+   } else if (døgn <= 11) {
+    return `God morgen ${navn}`
+   } else if (døgn <= 17) {
+    return `God dag ${navn}`
+   } else if (døgn <= 23) {
+    return `God kveld ${navn}`
+   } 
+}
+
+console.log(clock())
+
+
 
 /******************************************************************************
 4.
