@@ -229,11 +229,13 @@ Eksempel 4: (["En", "To", "Tre"], "To") --> ["En", "Tre"]
 
 // Skriv koden for oppgave 7 her
 
-const farger = (["Rød", "Grønn"], "Blå")
+const farger = (["Rød", "Grønn"], "blå")
 
-const removeFarger = () => {
+const removeFarger = (array, string) => {
     if (typeof farger === "string") {
-        
+        return ["Rød", "Grønn", "blå"]
+    } else (typeof farger === "array"); {
+        return ["Rød", "Grønn"]
     }
 }
 
