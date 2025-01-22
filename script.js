@@ -229,17 +229,17 @@ Eksempel 4: (["En", "To", "Tre"], "To") --> ["En", "Tre"]
 
 // Skriv koden for oppgave 7 her
 
-const farger = (["Rød", "Grønn"], "blå")
+// const farger = (["Rød", "Grønn"], "blå")
 
-const removeFarger = (array, string) => {
-    if (typeof farger === "string") {
-        return ["Rød", "Grønn", "blå"]
-    } else (typeof farger === "array"); {
-        return ["Rød", "Grønn"]
-    }
-}
+// const removeFarger = (array, string) => {
+//     if (typeof farger === "string") {
+//         return ["Rød", "Grønn", "blå"]
+//     } else (typeof farger === "array"); {
+//         return ["Rød", "Grønn"]
+//     }
+// }
 
-console.log(removeFarger())
+// console.log(removeFarger())
 
 
 /******************************************************************************
