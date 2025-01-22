@@ -22,17 +22,18 @@ funksjonen)
 ******************************************************************************/
 
 // Skriv koden for oppgave 1 her
-let tall = 1
 
-function myNumberChecker () {
-    if (tall %2 === 0) {
-        return "Partall"
-    }  else {
-        return "Oddetall"
-    }
-}
+// let tall = 1
 
-console.log(myNumberChecker())
+// function myNumberChecker () {
+//     if (tall %2 === 0) {
+//         return "Partall"
+//     }  else {
+//         return "Oddetall"
+//     }
+// }
+
+// console.log(myNumberChecker())
 
 
 /******************************************************************************
@@ -49,13 +50,13 @@ Eksempel: "Dette er kult" skal returnere "DETTE ER KULT!"
 
 // Skriv koden for oppgave 2 her
 
-let myText = "Dette er kult"
+// let myText = "Dette er kult"
 
-const bigText = () => {
-    return myText.toUpperCase() + "!"
-}
+// const bigText = () => {
+//     return myText.toUpperCase() + "!"
+// }
 
-console.log(bigText())
+// console.log(bigText())
 
 
 /******************************************************************************
@@ -82,24 +83,24 @@ Hvis ingen timeverdi mottas, skal funksjonen returnere en feilmelding.
 
 // Skriv koden for oppgave 3 her
 
-let døgn = 2
-let navn = "Ola Normann"
+// let døgn = 1
+// let navn = "Ola Normann"
 
-const clock = () => {
-   if (døgn < 0, døgn > 23 ) {
-    return "Ugyldig tid"
-   } else if (døgn <= 5) {
-    return `God natt ${navn}`
-   } else if (døgn <= 11) {
-    return `God morgen ${navn}`
-   } else if (døgn <= 17) {
-    return `God dag ${navn}`
-   } else if (døgn <= 23) {
-    return `God kveld ${navn}`
-   } 
-}
+// const clock = () => {
+//    if (døgn < 0 ||  døgn > 23 ) {
+//     return "Ugyldig tid"
+//    } else if (døgn <= 5) {
+//     return `God natt ${navn}`
+//    } else if (døgn <= 11) {
+//     return `God morgen ${navn}`
+//    } else if (døgn <= 17) {
+//     return `God dag ${navn}`
+//    } else if (døgn <= 23) {
+//     return `God kveld ${navn}`
+//    } 
+// }
 
-console.log(clock())
+// console.log(clock())
 
 
 
@@ -119,6 +120,15 @@ Eksempel 2: ["En", "To", "Tre", "Fire", "Fem", "Seks"] skal returnere
 ******************************************************************************/
 
 // Skriv koden for oppgave 4 her
+
+// let colors = ["Rød", "Grønn", "Blå", "Gul"]
+
+// const removeWords = () => {
+//     colors.shift() & colors.pop()
+//     return colors
+// }
+
+// console.log(removeWords())
 
 /******************************************************************************
 5.
@@ -140,6 +150,17 @@ Eksempel 3: "   vanskelig        " skal returnere "gøy".
 ******************************************************************************/
 
 // Skriv koden for oppgave 5 her
+
+// let text = " Det er vanskelig å bruke metoder "
+
+// const textEditor = () => {
+//     let newText = text
+//         .replace("vanskelig", "gøy")
+//         .trim()
+//     return newText
+// }
+
+// console.log(textEditor())
 
 /******************************************************************************
 6.
@@ -166,6 +187,22 @@ Ekstra utfordring: Lag et nytt array som kun inkluderer elementer som inneholder
 
 // Skriv koden for oppgave 6 her
 
+// const itemsFunction = () => {
+//     items.shift()
+//     items.splice(2, 1, "Linjal")
+//     items.splice(0,2) 
+//     return items.join(" | ")
+// }
+
+// console.log(itemsFunction())
+
+
+
+// const test = items.filter(item => item.includes("e"))
+// console.log(test)
+
+
+
 /******************************************************************************
 7.
 
@@ -191,6 +228,17 @@ Eksempel 4: (["En", "To", "Tre"], "To") --> ["En", "Tre"]
 ******************************************************************************/
 
 // Skriv koden for oppgave 7 her
+
+const farger = (["Rød", "Grønn"], "Blå")
+
+const removeFarger = () => {
+    if (typeof farger === "string") {
+        
+    }
+}
+
+console.log(removeFarger())
+
 
 /******************************************************************************
 8.
@@ -219,3 +267,23 @@ Returner "😎Kun primitive verdier😎".
 ******************************************************************************/
 
 // Skriv koden for oppgave 8 her
+
+let something = [1, 2, 3]
+
+const paramteterChecker = () => {
+    if (typeof something === "string") {
+       return "😎" + something + "😎"
+    } else if (typeof something === "number") {
+        return "😎" + something * 2 + "😎"
+    } else if (typeof something === "boolean") {
+        if (something === true) {
+            return "😎Ja😎"
+        } else {
+            return "😎Slapp av😎"
+        }
+    } else {
+        return "😎Kun primitive verdier😎"
+    }
+}
+
+console.log(paramteterChecker())
